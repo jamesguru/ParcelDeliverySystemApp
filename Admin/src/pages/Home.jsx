@@ -47,7 +47,7 @@ const Home = () => {
                   { id: 1, value: 100, label: "Pending Parcels" },
                   { id: 2, value: 50, label: "Rejected Parcels" },
                 ],
-               
+
                 innerRadius: 40,
                 outerRadius: 100,
                 paddingAngle: 5,
@@ -58,14 +58,11 @@ const Home = () => {
                 cy: 150,
               },
             ]}
-            
           />
         </div>
 
         <div className="h-[350px] w-[300px] shadow-xl p-[20px]">
-          <h2 className="flex px-[20px] text-[#fff]">
-            Recent Users
-          </h2>
+          <h2 className="flex px-[20px] text-[#fff]">Recent Users</h2>
 
           <ol className="flex font-semibold flex-col justify-end px-[20px] mt-[10px]  text-[#D9D9D9]">
             <li>1. John Doe</li>

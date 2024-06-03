@@ -4,6 +4,10 @@ import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Home from "./pages/Home";
 import Parcels from "./pages/Parcels";
+import Users from "./pages/Users";
+import NewParcel from "./pages/NewParcel";
+import NewUsers from "./pages/NewUsers";
+import Parcel from "./pages/Parcel";
 
 function App() {
   const Layout = () => {
@@ -40,8 +44,28 @@ function App() {
           path: "/parcels",
           element: <Parcels />,
         },
+        
+        {
+          path: "/users",
+          element: <Users />,
+        },
+        
+        {
+          path: "/newparcel",
+          element: <NewParcel />,
+        },
+        {
+          path: "/newuser",
+          element: <NewUsers />,
+        },
+        {
+          path: "/parcel/:id",
+          element: <Parcel />,
+        },
       ],
     },
+
+  
   ]);
 
   return <RouterProvider router={router} />;
