@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pending Parcel</title>
+    <style type="text/css">
+        body{
+            margin:0;
+            padding: 0;
+            min-width:100%;
+            font-family: Arial,sans-serif;
+            font-size:16px;
+            line-height: 1.5;
+            background-color: #FAFAFA;
+            color:#222222;
+        }
+        a{
+            color:#000;
+            text-decoration: none;
+        }
+
+        h1{
+            font-size:24px;
+            font-weight:700;
+            line-height:1.25;
+            margin-top:0;
+            margin-bottom:15px;
+            text-align:center;
+        }
+        .status{
+            background-color: #1E1E1E;
+            color: #fff; 
+            width: 70px; 
+            padding: 10px;
+        }
+        p{
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+        table td{
+            vertical-align: top;
+        }
+        .email-wrapper{
+            max-width:700px;
+            margin: 0 auto;
+        }
+        .email-header{
+            background-color: #1E1E1E;
+            padding: 30px;
+            color: #fff;
+        }
+
+        .email-body{
+            padding:14px;
+            background-color: #E9EB77;
+         
+        }
+        .email-footer{
+            background-color: #E9EB77;        
+            padding: 14px;
+        }
+
+        img{
+            background-color: #1E1E1E;
+            padding: 24px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="email-wrapper">
+
+        <div class="email-header">
+            <h1>Pending Parcel</h1>
+        </div>         
+        <div class="email-body">  
+        <p>Hello <%= sendername %>,</p>
+        <p>You've a parcel that has been sent:</p>
+        <p>Here are the details:</p>
+        <p>From: <%= from %></p>
+        <p>To: <%= to %></p>
+        <p>Sender: <%= sendername %></p>
+        <p>Recipient: <%= recipientname %></p>
+        <p>Cost: $ <%= cost %></p>
+        <p>Weight: <%= weight %></p>
+        <p>Note: <%= note %></p>
+        <p class="status">Pending</p>
+        <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1717495157/hero_r5lgvq.png" alt="" height="250px" width="500px">
+        <h3>Note:</h3>
+        <p>Please if you were not sending or receiving the parcel ignore this email.</p>
+        
+        </div>
+        <div class="email-footer">
+            <p>If you have any questions, please don't hesitate to contact us at <a href="mailto:alokmondala199@gmail.com">sendit@outlook.com</a></a></p>
+        </div>
+    </div>    
+</body>
+</html>

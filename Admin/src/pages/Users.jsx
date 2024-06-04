@@ -77,20 +77,7 @@ const Users = () => {
         { field: "age", headerName: "Age", width: 100 },
         { field: "country", headerName: "Country", width: 150 },
         { field: "role", headerName: "Role", width: 150 },
-        {
-          field: "edit",
-          headerName: "Edit",
-          width: 150,
-          renderCell: () => {
-            return (
-              <>
-                <button className="bg-teal-300 text-white cursor-pointer w-[70px]">
-                  Edit
-                </button>
-              </>
-            );
-          },
-        },
+        
         {
           field: "delete",
           headerName: "Delete",
