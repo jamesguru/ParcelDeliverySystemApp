@@ -8,6 +8,7 @@ import Users from "./pages/Users";
 import NewParcel from "./pages/NewParcel";
 import NewUsers from "./pages/NewUsers";
 import Parcel from "./pages/Parcel";
+import Login from "./pages/Login";
 
 function App() {
   const Layout = () => {
@@ -63,6 +64,11 @@ function App() {
           element: <Parcel />,
         },
       ],
+     
+    },
+    {
+      path: "/login",
+      element: <Login />,
     },
 
   

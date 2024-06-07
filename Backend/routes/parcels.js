@@ -40,6 +40,17 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+// GET ONE PARCEL
+
+router.get("/find/:id", async (req, res) => {
+  try {
+    const parcel = await Parcel.findById(req.params.id);
+    res.status(200).json(parcel);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+});
+
 // GET USERS PARCEL
 
 router.post("/me", async (req, res) => {

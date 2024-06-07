@@ -9,7 +9,9 @@ const ParcelSchema = mongoose.Schema(
     recipientemail: { type: String, require:true},
     weight: { type: Number, require:true},
     cost: { type: Number, require:true},
+    date: { type: String},
     note: { type: String},
+    feedback: { type: String},
     status: { type: Number, default:0},
   },
   { timestamps: true }

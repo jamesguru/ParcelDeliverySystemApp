@@ -10,6 +10,8 @@ const ParcelSchema = mongoose.Schema(
     weight: { type: Number, require:true},
     cost: { type: Number, require:true},
     note: { type: String},
+    date: { type: String},
+    feedback: { type: String},
     status: { type: Number, default:0},
   },
   { timestamps: true }
